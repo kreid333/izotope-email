@@ -6,30 +6,24 @@ subject: My Email Templates
 <container>
   <spacer class="grey-spacer" size="42"></spacer>
 
-  <row class="compressor">
+  <row class="card">
     <columns>
       <row>
         <columns>
           <center>
-            <img
-              src="https://ci4.googleusercontent.com/proxy/gr3Fcl6T2fYFr9Ra2No2RSQ-lOLv0I-BVyVP4gxfrIXrWCIpwbE8WIdm9HMkW9ekm489J59mSMQJlk47ihPfGWtzvIBueGhhA9pm3UJPpiVra6-LMLh8Lw0sujbWVlA2tcqTzfUs-5QdGER7KIOVYaMx_q6XxkjcNIpiH7P9APesxMnbmrA=s0-d-e1-ft#https://www.izotope.com/content/dam/acs/izotope/newsletter/what-is-a-compressor-audio-dynamics-video-newsletter.jpg"
-              alt=""
-            />
+            <img src="{{izotope.audioDynamics.image}}" alt="" />
           </center>
         </columns>
       </row>
       <row>
-        <columns class="audio-dynamics">
+        <columns class="description">
           <spacer size="42"></spacer>
-          <h2 class="text-center">Audio Dynamics 101: What Is a Compressor?</h2>
-          <p class="text-center">
-            Learn what compressors are, what situations they are used for, and
-            how to pick the right compressor to achieve your desired sound.
-          </p>
+          <h2 class="text-center">{{izotope.audioDynamics.title}}</h2>
+          <p class="text-center">{{izotope.audioDynamics.info}}</p>
           <spacer size="42"></spacer>
           <center>
             <a href="#">
-              <span>Get Started</span>
+              <span>{{izotope.audioDynamics.buttonText}}</span>
             </a>
           </center>
           <spacer size="42"></spacer>
@@ -52,4 +46,34 @@ subject: My Email Templates
   </row>
 
   <spacer class="grey-spacer" size="42"></spacer>
+
+  {{#each izotope.bottomCards}}
+  <row class="card">
+    <columns>
+      <row>
+        <columns>
+          <center>
+            <img src="{{this.image}}" alt="" />
+          </center>
+        </columns>
+      </row>
+      <row>
+        <columns class="description">
+          <spacer size="42"></spacer>
+          <h2 class="text-center">{{this.title}}</h2>
+          <p class="text-center">{{this.info}}</p>
+          <spacer size="42"></spacer>
+          <center>
+            <a href="#">
+              <span>{{this.buttonText}}</span>
+            </a>
+          </center>
+          <spacer size="42"></spacer>
+        </columns>
+      </row>
+    </columns>
+  </row>
+
+  <spacer class="grey-spacer" size="42"></spacer>
+  {{/each}}
 </container>
