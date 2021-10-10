@@ -35,6 +35,17 @@ html,
   }
 }
 
+.bottom-header {
+  background-color: #7155C7;
+  h1 {
+    color: #fff;
+    margin: 0px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    font-weight: 600;
+  }
+}
+
 // UTILITIES
 .vertical-alignMiddle {
   vertical-align: middle;
