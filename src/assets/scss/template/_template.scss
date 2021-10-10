@@ -1,0 +1,41 @@
+body,
+html, 
+.body {
+  background-color: $body-background;
+  background: $body-background;
+}
+
+// HEADER
+.top-header {
+  background-color: #13161a;
+  background: #13161a;
+  .top-headerRow {
+    max-width: 600px; 
+    background-color: #13161a; 
+    margin: 0 auto;
+  }
+  .top-headerLogo {
+    width: 136px !important;
+  }
+  .top-headerNav {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    white-space: nowrap;
+  }
+  .top-headerLink {
+    span {
+      font-size: 16px;
+      width: 60px;
+      margin: 0 auto;
+    }
+    a {
+      color: white;
+      text-decoration: none;
+    }
+  }
+}
+
+// UTILITIES
+.vertical-alignMiddle {
+  vertical-align: middle;
+}
