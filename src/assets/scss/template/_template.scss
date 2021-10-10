@@ -16,6 +16,8 @@ html,
   }
   .top-headerLogo {
     width: 136px !important;
+    float: left;
+    text-align: left;
   }
   .top-headerNav {
     padding-top: 20px;
@@ -46,7 +48,58 @@ html,
   }
 }
 
+// AUDIO DYNAMICS
+.audio-dynamics {
+  th {
+    padding-left: 28px;
+    padding-right: 28px;
+  }
+  th.expander {
+    padding: 0px;
+  }
+  h2 {
+    font-weight: 600;
+    margin: 0px;
+  }
+  p {
+    margin: 0px;
+    padding-left: 12px;
+    padding-right: 12px;
+    padding-bottom: 12px;
+    padding-top: 12px;
+  }
+  a {
+    display: inline-block;
+    background: #000;
+    background-color: #000;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 12px;
+    padding-top: 12px;
+    border-radius: 40px;
+  }
+  span {
+    color: #fff;
+    font-size: 20px;
+    font-weight: 600;
+  }
+}
+
 // UTILITIES
 .vertical-alignMiddle {
   vertical-align: middle;
+}
+
+.grey-spacer {
+  background-color: #E4E5EA;
+}
+
+// MEDIA QUERIES
+@media only screen and (max-width: 600px) {
+  .top-header {
+    .top-headerLogo {
+      float: none;
+      margin: 0 auto;
+    }
+  }
 }
