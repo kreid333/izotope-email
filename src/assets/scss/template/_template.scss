@@ -98,7 +98,7 @@ html,
     padding-left: 28px;
     padding-right: 28px;
   }
-  h1{
+  h1 {
     font-family: korolev, sans-serif;
     margin: 0;
     font-weight: 600;
@@ -110,15 +110,15 @@ html,
     margin-bottom: 10px;
   }
   .links {
-     span {
-       display: block;
-       text-align: center;
-     }
+    span {
+      display: block;
+      text-align: center;
+    }
   }
   .topics-link {
     display: inline-block;
-    background: #F1F3F5;
-    background-color: #F1F3F5;
+    background: #f1f3f5;
+    background-color: #f1f3f5;
     color: #000;
     padding-left: 12px;
     padding-right: 12px;
@@ -133,8 +133,8 @@ html,
 
   .thumb {
     display: inline-block;
-    background: #F1F3F5;
-    background-color: #F1F3F5;
+    background: #f1f3f5;
+    background-color: #f1f3f5;
     border-radius: 50%;
     padding-left: 12px;
     padding-right: 12px;
@@ -158,6 +158,56 @@ html,
   }
 }
 
+// TOP FOOTER
+.top-footer {
+  img {
+    width: 74px !important;
+  }
+  .motto {
+    font-size: 20px;
+    font-family: korolev, sans-serif;
+    font-weight: 600;
+    padding-top: 22px;
+  }
+}
+
+.social-footer {
+ & > table {
+  width: 70% !important;
+  margin: 0 auto;
+ }
+
+}
+
+.social-link {
+  & > table > tbody > tr > th {
+    span {
+      margin-right: 10px;
+    }
+  }
+}
+
+.social-link, .follow-us {
+  vertical-align: middle;
+  & > table > tbody > tr > th {
+    text-align: center;
+    span {
+      display: inline-block;
+      padding-left: 12px;
+      padding-right: 12px;
+      padding-top: 12px;
+      padding-bottom: 12px;
+    }
+  }
+  img {
+    width: 24px;
+  }
+
+  .facebook {
+    width: 10px !important;
+  }
+}
+
 // UTILITIES
 .vertical-alignMiddle {
   vertical-align: middle;
@@ -169,6 +219,14 @@ html,
     .top-headerLogo {
       float: none;
       margin: 0 auto;
+    }
+  }
+
+  .social-link {
+    & > table > tbody > tr > th {
+      span {
+        margin: 0;
+      }
     }
   }
 }
