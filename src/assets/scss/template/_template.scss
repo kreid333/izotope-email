@@ -244,8 +244,11 @@ html,
     }
   }
 
-  .extra-links-small a {
-    text-decoration: underline;
+  .extra-links-small {
+    white-space: nowrap;
+    a {
+      text-decoration: underline; 
+    }
   }
 }
 
