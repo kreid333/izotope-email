@@ -1,130 +1,45 @@
-# Foundation for Emails Template
+# Izotope Email
 
-[![devDependency Status](https://david-dm.org/zurb/foundation-emails-template/dev-status.svg)](https://david-dm.org/zurb/foundation-emails-template#info=devDependencies)
+## Description 
 
-**Please open all issues with this template on the main [Foundation for Emails](http://github.com/zurb/foundation-emails/issues) repo.**
+This is an Izotope newsletter email developed by me using the Foundation for Emails 2 framework (HTML, SCSS, Inky, Gulp, Panini).
 
-This is the official starter project for [Foundation for Emails](http://foundation.zurb.com/emails), a framework for creating responsive HTML devices that work in any email client. It has a Gulp-powered build system with these features:
+## Table of Contents
 
-- Handlebars HTML templates with [Panini](http://github.com/zurb/panini)
-- Simplified HTML email syntax with [Inky](http://github.com/zurb/inky)
-- Sass compilation
-- Image compression
-- Built-in BrowserSync server
-- Full email inlining process
+* [Installation](#installation)
+* [Usage](#usage)
+* [Finished Project](#finished-project)
+* [Credits](#credits)
+* [License](#license)
 
 ## Installation
 
-To use this template, your computer needs [Node.js](https://nodejs.org/en/) 0.12 or greater. The template can be installed with the Foundation CLI, or downloaded and set up manually.
+No install required.
 
-### Using the CLI
+## Usage 
 
-Install the Foundation CLI with this command:
+After cloning the repo, the files can be accessed locally.
 
-```bash
-npm install foundation-cli --global
-```
+Instead of running locally, the email can also be seen here:
+ * [Izotope Email](https://izotope-email.netlify.app/)
 
-Use this command to set up a blank Foundation for Emails project:
+## Finished Project
 
-```bash
-foundation new --framework emails
-```
+![1634066388677](https://user-images.githubusercontent.com/67942678/137016126-4ee7a49e-9529-44ac-8341-b1991644a76c.png)
 
-The CLI will prompt you to give your project a name. The template will be downloaded into a folder with this name.
+## Credits
 
-### Manual Setup
+* [Izotope](https://www.izotope.com/)
+* [Foundation](https://get.foundation/emails)
 
-To manually set up the template, first download it with Git:
+## License
 
-```bash
-git clone https://github.com/zurb/foundation-emails-template projectname
-```
+MIT License
 
-Then open the folder in your command line, and install the needed dependencies:
+&copy; 2021, Kai Reid
 
-```bash
-cd projectname
-npm install
-```
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
 
-## Build Commands
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 
-Run `npm start` to kick off the build process. A new browser tab will open with a server pointing to your project files.
-
-Run `npm run build` to inline your CSS into your HTML along with the rest of the build process.
-
-Run `npm run litmus` to build as above, then submit to litmus for testing. *AWS S3 Account details required (config.json)*
-
-Run `npm run mail` to build as above, then send to specified email address for testing. *SMTP server details required (config.json)*
-
-Run `npm run zip` to build as above, then zip HTML and images for easy deployment to email marketing services. 
-
-### Speeding Up Your Build
-
-If you create a lot of emails, your build can start to slow down, as each build rebuilds all of the emails in the
-repository. A simple way to keep it fast is to archive emails you no longer need by moving the pages into `src/pages/archive`.
-You can also move images that are no longer needed into `src/assets/img/archive`. The build will ignore pages and images that
-are inside the archive folder.
-
-## Litmus Tests (config.json)
-
-Testing in Litmus requires the images to be hosted publicly. The provided gulp task handles this by automating hosting to an AWS S3 account. Provide your Litmus and AWS S3 account details in the `example.config.json` and then rename to `config.json`. Litmus config, and `aws.url` are required, however if you follow the [aws-sdk suggestions](http://docs.aws.amazon.com/AWSJavaScriptSDK/guide/node-configuring.html) you don't need to supply the AWS credentials into this JSON.
-
-```json
-{
-  "aws": {
-    "region": "us-east-1",
-    "accessKeyId": "YOUR_ACCOUNT_KEY",
-    "secretAccessKey": "YOUR_ACCOUNT_SECRET",
-    "params": {
-        "Bucket": "elasticbeanstalk-us-east-1-THIS_IS_JUST_AN_EXAMPLE"
-    },
-    "url": "https://s3.amazonaws.com/elasticbeanstalk-us-east-1-THIS_IS_JUST_AN_EXAMPLE"
-  },
-  "litmus": {
-    "username": "YOUR_LITMUS@EMAIL.com",
-    "password": "YOUR_ACCOUNT_PASSWORD",
-    "url": "https://YOUR_ACCOUNT.litmus.com",
-    "applications": ["ol2003","ol2007","ol2010","ol2011","ol2013","chromegmailnew","chromeyahoo","appmail9","iphone5s","ipad","android4","androidgmailapp"]
-  }
-}
-```
-
-## Manual email tests (config.json)
-
-Similar to the Litmus tests, you can have the emails sent to a specified email address. Just like with the Litmus tests, you will need to provide AWS S3 account details in `config.json`. You will also need to specify to details of an SMTP server. The email address to send to emails to can either by configured in the `package.json` file or added as a parameter like so: `npm run mail -- --to="example.com"`
-
-```json
-{
-  "aws": {
-    "region": "us-east-1",
-    "accessKeyId": "YOUR_ACCOUNT_KEY",
-    "secretAccessKey": "YOUR_ACCOUNT_SECRET",
-    "params": {
-        "Bucket": "elasticbeanstalk-us-east-1-THIS_IS_JUST_AN_EXAMPLE"
-    },
-    "url": "https://s3.amazonaws.com/elasticbeanstalk-us-east-1-THIS_IS_JUST_AN_EXAMPLE"
-  },
-  "mail": {
-    "to": [
-      "example@domain.com"
-    ],
-    "from": "Company name <info@company.com",
-    "smtp": {
-      "auth": {
-        "user": "example@domain.com",
-        "pass": "12345678"
-      },
-      "host": "smtp.domain.com",
-      "secureConnection": true,
-      "port": 465
-    }
-  }
-}
-```
-
-For a full list of Litmus' supported test clients(applications) see their [client list](https://litmus.com/emails/clients.xml).
-
-**Caution:** AWS Service Fees will result, however, are usually very low do to minimal traffic. Use at your own discretion.
-
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
