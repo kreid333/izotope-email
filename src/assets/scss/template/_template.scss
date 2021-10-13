@@ -15,9 +15,11 @@ html,
     margin: 0 auto;
   }
   .top-headerLogo {
+    display: block;
     width: 136px !important;
-    float: left;
-    text-align: left;
+    img {
+      width: 100%;
+    }
   }
   .top-headerNav {
     padding-top: 20px;
