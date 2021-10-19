@@ -1,25 +1,29 @@
 {
     "audioDynamics": {
-        "image": "https://ci4.googleusercontent.com/proxy/gr3Fcl6T2fYFr9Ra2No2RSQ-lOLv0I-BVyVP4gxfrIXrWCIpwbE8WIdm9HMkW9ekm489J59mSMQJlk47ihPfGWtzvIBueGhhA9pm3UJPpiVra6-LMLh8Lw0sujbWVlA2tcqTzfUs-5QdGER7KIOVYaMx_q6XxkjcNIpiH7P9APesxMnbmrA=s0-d-e1-ft#https://www.izotope.com/content/dam/acs/izotope/newsletter/what-is-a-compressor-audio-dynamics-video-newsletter.jpg",
+        "image": "https://i.imgur.com/YFJAUDG.jpg",
+        "alt": "What's a Compressor?",
         "title": "Audio Dynamics 101: What Is a Compressor?",
         "info": "Learn what compressors are, what situations they are used for, and how to pick the right compressor to achieve your desired sound.",
         "buttonText": "Watch Now"
     },
     "bottomCards": [
         {
-            "image": "https://ci5.googleusercontent.com/proxy/qi0tlr_hYzIO4WLTiS3sp5z5UM6_EKRHMjadReOzh2Dh3HXbXO0yAJBc-h-tJvt_TIfUeLob8D-C5whFWfNVnRax6lhr5VKLhfy86gIHMil1-FEs1rmVj-xpAFhgEIJVfKdE5X5E4c5aYV_yHEQPtQUBdQNSP4JEq4w=s0-d-e1-ft#https://www.izotope.com/content/dam/acs/izotope/newsletter/multiband-compression-basics-newsletter.jpeg",
+            "image": "https://i.imgur.com/YGWqmbd.jpg",
+            "alt": "Image of an equalizer",
             "title": "Multiband Compression Basics",
             "info": "Learn everything you need to know about multiband compression, including what it is, when to reach for it, and how to set it up for mixing or mastering.",
             "buttonText": "Get Started"
         },
         {
-            "image": "https://ci5.googleusercontent.com/proxy/-oAQ-WdZCRUDwb6kkVEnn2NTKCUsRc98lSBcW6_5m-PamvqfV055rzSDzGjFc5iawPMCLDyLB7jScIrfOJWBHai4Gy291UGU1GCV-K0Kp5SDCcrXxJysBj_M-k86dtR5x3BmjQu5Xh61JW4TveSzsklZaL8KMhgVvwQenzcTqQRGtpGbFP8ssJSr=s0-d-e1-ft#https://www.izotope.com/content/dam/acs/izotope/newsletter/how-to-create-better-transitions-in-your-mix-newsletter.jpeg",
+            "image": "https://i.imgur.com/owK4bJA.jpg",
+            "alt": "Iamge of Abstract artwork",
             "title": "How to Create Better Transitions in Your Mix",
             "info": "Learn how to get better transitions in your songs and mixes by creating contrast in your arrangement, adding tension between sections, and automating effects.",
             "buttonText": "Learn More"
         },
         {
-            "image": "https://ci4.googleusercontent.com/proxy/6pM8mWUFdudwxT346OA5qZlzIsi3VnNXXHE1u1FLQn35e7zskhOd8LMEOnHKSL-cs6G1Rr5hvHq1sejj0FdEUEstDYxdMpdpJ3YYctlZICM_Xj3_bGd8IXVCu3Qxzea-Re1Hcw6L-1vI4rK665l1t_3t-w=s0-d-e1-ft#https://www.izotope.com/content/dam/acs/izotope/newsletter/vocal-mixing-plug-ins-newsletter.jpeg",
+            "image": "https://i.imgur.com/0ydQIMh.jpg",
+            "alt": "Image of man facing towards a microphone",
             "title": "Vocal Mixing 101: Free Vocal Doubler Plug-in and Tips for Mixing Vocals",
             "info": "Take your vocal mixing skills to the next level with an overview of six intuitive plug-ins for mixing vocals. Learn to effectively use each one and download a free plug-in, the Vocal Doubler.",
             "buttonText": "Get Free Plug-in"
